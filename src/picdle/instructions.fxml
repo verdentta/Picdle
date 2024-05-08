@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="picdle.Controller">
+    <children>
+      <Button fx:id="BackButton" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="43.0" prefWidth="194.0" text="BACK" translateY="300.0" />
+      <TextArea maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="372.0" prefWidth="1222.0" text="The game is simple!&#10;&#10;You will be first presented with an image for a brief few seconds.&#10;&#10;Your task will then be to assemble the image with the tiles you are given on the right side &#10;by dragging and dropping starting with the first row at the very top!&#10;&#10;Each row must be completed in sequential order from top to bottom! Failure to complete &#10;each row in sequential order will mean a strike.&#10;&#10;How many strikes you get depends on how many rows an image will have. If an image &#10;has 3 rows, then you will have 3 strikes, 4 rows&#10;then 4 strikes and so forth.&#10;&#10;HAVE FUN :)&#10;" translateY="50.0">
+         <font>
+            <Font name="Engravers MT" size="17.0" />
+         </font>
+      </TextArea>
+      <TextField text="                  INSTRUCTIONS" translateY="-300.0" StackPane.alignment="CENTER">
+         <font>
+            <Font size="77.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.54" contrast="1.0" />
+         </effect>
+      </TextField>
+    </children>
+</StackPane>
